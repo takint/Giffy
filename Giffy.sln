@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Giffy.web", "giffy.web\Giffy.web.csproj", "{77178462-EB73-4431-B787-0E283C889A32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Giffy.Entities", "Giffy.Entities\Giffy.Entities.csproj", "{8EB07ABF-CC56-4075-8A4D-47C4FB2532D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Giffy.DataAccess", "Giffy.DataAccess\Giffy.DataAccess.csproj", "{8B7E1D52-B67D-485C-964D-8D39FF91B39F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77178462-EB73-4431-B787-0E283C889A32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77178462-EB73-4431-B787-0E283C889A32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77178462-EB73-4431-B787-0E283C889A32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77178462-EB73-4431-B787-0E283C889A32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EB07ABF-CC56-4075-8A4D-47C4FB2532D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EB07ABF-CC56-4075-8A4D-47C4FB2532D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EB07ABF-CC56-4075-8A4D-47C4FB2532D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EB07ABF-CC56-4075-8A4D-47C4FB2532D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B7E1D52-B67D-485C-964D-8D39FF91B39F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B7E1D52-B67D-485C-964D-8D39FF91B39F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B7E1D52-B67D-485C-964D-8D39FF91B39F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B7E1D52-B67D-485C-964D-8D39FF91B39F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

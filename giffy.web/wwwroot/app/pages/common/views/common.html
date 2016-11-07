@@ -1,0 +1,11 @@
+<header data-ng-attr-hide-header="{{tcmsctrl.hideHeaderAttr || undefined}}" data-ng-attr-hide-offset="{{tcmsctrl.hideOffsetAttr || undefined}}" id="header" data-ng-include src="'wwwroot/app/template/header.html'" data-ng-controller="headerCtrl as hctrl" data-ng-init="hctrl.init()"></header>
+
+<section id="main">
+    <aside id="sidebar" data-ng-include src="'wwwroot/app/template/sidebar-left.html'" data-ng-class="{ 'toggled': tcmsctrl.sidebarToggle.left === true }"></aside>
+    <div class="sidebar-overlay hidden-lg" data-ng-if="tcmsctrl.sidebarToggle.left" data-ng-click="tcmsctrl.sidebarToggle.left = false"></div>
+    <!--<aside id="chat" data-ng-include src="'wwwroot/app/template/chat.html'" data-ng-class="{ 'toggled': tcmsctrl.sidebarToggle.right === true }"></aside>-->
+
+    <section id="content" class="page-view" data-ui-view></section>
+</section>
+
+<footer id="footer" data-ng-include src="'wwwroot/app/template/footer.html'"></footer>
