@@ -1,12 +1,10 @@
 module.exports = {
     'prod': {
-        src: 'svg/2.2/*/*.svg',
+        src: 'svg/2.1/*/*.svg',
         dest: 'dist/fonts',
         destCss: 'less/temp',
         options: {
             font: 'Material-Design-Iconic-Font',
-            types: 'ttf,woff',
-            autoHint: false,
             syntax: 'bootstrap',
             stylesheet: 'less',
             centerHorizontally : true,
@@ -22,13 +20,11 @@ module.exports = {
         }
     },
     'dev': {
-        src: 'svg/2.2/*/*.svg',
+        src: 'svg/2.1/*/*.svg',
         dest: 'test/fonts',
         destCss: 'less/temp',
         options: {
             font: 'Material-Design-Iconic-Font',
-            types: 'ttf,woff',
-            autoHint: false,
             syntax: 'bootstrap',
             styles: 'icon',
             stylesheet: 'less',
