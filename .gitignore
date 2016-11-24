@@ -211,3 +211,4 @@ Logs/
 
 *.orig 
 sh.exe.stackdump
+Giffy.DataImport/SourceData/

@@ -203,27 +203,27 @@ namespace Giffy.DataAccess.Services
         {
             try
             {
-                bool isAutoApproved = ClaimsPrincipal.Current.Claims.Any(c => c.Value == "Admin")
-                || ClaimsPrincipal.Current.Claims.Any(c => c.Value == "SuperAdmin")
-                || ClaimsPrincipal.Current.Claims.Any(c => c.Value == "Mod");
+                //bool isAutoApproved = ClaimsPrincipal.Current.Claims.Any(c => c.Value == "Admin")
+                //|| ClaimsPrincipal.Current.Claims.Any(c => c.Value == "SuperAdmin")
+                //|| ClaimsPrincipal.Current.Claims.Any(c => c.Value == "Mod");
 
-                User user = await _userManager.FindByNameAsync(userName);
+                //User user = await _userManager.FindByNameAsync(userName);
                 Post post = Mapper.Map<Post>(newPost);
                 
-                post.CreatedUserId = user.Id;
+                //post.CreatedUserId = user.Id;
                 post.CreatedDate = DateTime.UtcNow;
-                post.UpdatedUserId = user.Id;
-                post.UpdatedDate = DateTime.UtcNow;
+                //post.UpdatedUserId = user.Id;
+                //post.UpdatedDate = DateTime.UtcNow;
                 post.PublishedDate = DateTime.UtcNow;
-                post.IsActived = isAutoApproved;
+                post.IsActived = true;
                 _repository.Insert(post);
                 await _unitOfWork.SaveChangesAsync();
 
                 foreach (var image in newPost.Images)
                 {
-                    image.CreatedUserId = user.Id;
+                    //image.CreatedUserId = user.Id;
                     image.CreatedDate = DateTime.UtcNow;
-                    image.UpdatedUserId = user.Id;
+                    //image.UpdatedUserId = user.Id;
                     image.UpdatedDate = DateTime.UtcNow;
                     var newImage = Mapper.Map<Image>(image);
                     newImage.Post = post;
@@ -233,9 +233,9 @@ namespace Giffy.DataAccess.Services
 
                 foreach (var video in newPost.Videos)
                 {
-                    video.CreatedUserId = user.Id;
+                    //video.CreatedUserId = user.Id;
                     video.CreatedDate = DateTime.UtcNow;
-                    video.UpdatedUserId = user.Id;
+                    //video.UpdatedUserId = user.Id;
                     video.UpdatedDate = DateTime.UtcNow;
                     var newVideo = Mapper.Map<Video>(video);
                     newVideo.Post = post;
