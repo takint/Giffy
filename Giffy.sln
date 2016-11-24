@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Giffy.Entities", "Giffy.Entities\Giffy.Entities.csproj", "{6485A6AA-1954-4A2E-A5C6-401EA5C03AA2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Giffy.DataAccess", "Giffy.DataAccess\Giffy.DataAccess.csproj", "{52E7799B-058F-44DB-9783-7C1FDD4B6FE1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Giffy", "Giffy\Giffy.csproj", "{4834F24C-AF48-4ED1-8C2A-38A5FBD881B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Giffy.DataImport", "Giffy.DataImport\Giffy.DataImport.csproj", "{BEFEA14D-9BAF-4F6F-AD4D-ADFC86FC7401}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{4834F24C-AF48-4ED1-8C2A-38A5FBD881B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4834F24C-AF48-4ED1-8C2A-38A5FBD881B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4834F24C-AF48-4ED1-8C2A-38A5FBD881B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEFEA14D-9BAF-4F6F-AD4D-ADFC86FC7401}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEFEA14D-9BAF-4F6F-AD4D-ADFC86FC7401}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEFEA14D-9BAF-4F6F-AD4D-ADFC86FC7401}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEFEA14D-9BAF-4F6F-AD4D-ADFC86FC7401}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

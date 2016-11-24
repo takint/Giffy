@@ -8,7 +8,7 @@ namespace Giffy.DataAccess.Migrations
         {
             AutomaticMigrationsEnabled = true;
         }
-
+        // Update-Database -ConfigurationTypeName Giffy.DataAccess.Migrations.Configuration -force
         protected override void Seed(Giffy.DataAccess.GiffyContext context)
         {
             //  This method will be called after migrating to the latest version.
