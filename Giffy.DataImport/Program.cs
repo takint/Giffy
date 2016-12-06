@@ -29,7 +29,7 @@ namespace Giffy.DataImport
                     Name = imgName,
                     Description = "Imported giff",
                     ObjectState = ObjectState.Added,
-                    CreatedDate = DateTime.UtcNow,
+                    CreatedDate = DateTime.Now
                 };
 
                 Post gifPost = new Post()
@@ -37,18 +37,21 @@ namespace Giffy.DataImport
                     Title = imgName,
                     PostType = PostType.GAG,
                     ObjectState = ObjectState.Added,
-                    CreatedDate = DateTime.UtcNow
+                    CreatedDate = DateTime.Now,
+                    PublishedDate = DateTime.Now,
+                    IsActived = true
                 };
 
                 gifPost.Images = new List<Image>();
                 gifPost.Images.Add(gifImg);
 
                 db.Posts.Add(gifPost);
-                db.SaveChanges();
 
                 Console.WriteLine("Insert {0} into database.", imgName);
 
             } while (gifUrl != string.Empty);
+
+            db.SaveChanges();
         }
     }
 }
